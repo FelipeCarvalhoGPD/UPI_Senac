@@ -180,7 +180,6 @@ async function carregarCadastros() {
                 Remover
             </button>
         </div>
-        <hr>
         `;
     });
 }
