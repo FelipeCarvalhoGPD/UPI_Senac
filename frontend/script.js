@@ -134,23 +134,14 @@ async function cadastrar(event) {
 }
 
 function verificar() {
-    const login =
-        document.getElementById("login");
-    const conteudo =
-        document.getElementById("conteudo");
-    if (!login || !conteudo) return;
+    const conteudo = document.getElementById("conteudo");
+    if (!conteudo) return;
 
-    if (
-        sessionStorage.getItem(
-            "admin_logado"
-        ) === "true"
-    ) {
-        login.style.display = "none";
-        conteudo.style.display = "block";
+    if (sessionStorage.getItem("admin_logado") === "true") {
+        conteudo.style.display = "flex";
         carregarCadastros();
     } else {
-        login.style.display = "block";
-        conteudo.style.display = "none";
+        window.location.href = "login.html";
     }
 }
 

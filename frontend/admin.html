@@ -12,25 +12,26 @@
 </head>
 <body>
     <a href="login.html" class="botao_header"><i class="fa-solid fa-user-gear"></i></a>
-        <div id="conteudo" style="display:flex;">
-            <div class="card"
-                    style="
-                    display:flex;
-                    justify-content:space-between;
-                    align-items:center;
-                    flex-wrap:wrap;
-                ">
 
-                <div>
-                    <h1>Painel do Admin</h1>
-                    <p>Veja os cadastros realizados</p>
-                </div>
+    <div id="conteudo" style="display:flex;">
+        <div class="card"
+                style="
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                flex-wrap:wrap;
+            ">
+            <div>
+                <h1>Painel do Admin</h1>
+                <p>Veja os cadastros realizados</p>
             </div>
-            <br> 
-            <div class="cardCadastro">
-            </div>
+            <button onclick="logoutAdmin()" class="botaocadastro">Sair</button>
+        </div>
+        <br>
+        <div id="listaCadastros">
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
