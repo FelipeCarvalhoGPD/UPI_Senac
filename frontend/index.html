@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Início</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logotipo_upi_header" src="ícones/logotipo_UPI.png" alt="logotipo_upi"></a>
+        <h1 class="titulo_header">Unidade de Preparação<br>Militar de Itajubá</h1>
+        <nav class="menu_header">
+            <a class="opcao_header_ativo" href="index.html">Início</a>
+            <a class="opcao_header" href="galeria.html">Galeria</a>
+            <a class="opcao_header" href="projetos.html">Projetos</a>   
+            <a class="opcao_header" href="contato.html">Contato</a>
+            <a class="opcao_header" href="cadastro.html">Cadastro</a>
+        </nav>
+        <div class="redes_sociais_header">
+            <a href="https://www.instagram.com/upi01oficial/" target="_blank"><button class="botao_header"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></button></a>
+            <a href="https://www.facebook.com/escolamilitaritajuba?locale=pt_BR" target="_blank"><button class="botao_header"><i class="fa-brands fa-facebook-f" style="color: rgb(255, 255, 255);"></i></button></a>
+        </div>
+    </header>
+    <section class="carrossel">
+        <img id="imagem" class="banner" src="fotos/imagem_teste_proporcao1.jpg">
+        <div class="overlay_inicio"></div>
+            <div class="banner_info">
+                <h2>Formando Disciplina,<br>Liderança e Cidadania</h2>
+                <hr>
+                <p>Há anos formando jovens preparados para os desafios do futuro<br> por meio de valores, dedicação e compromisso com a excelência.</p>
+                <div class="menu_banner">
+                    <button onclick="window.location.href='#sobre_a_upi'" class="botao_conhecer_banner">Conhecer a UPI</button>
+                    <button onclick="window.location.href='cadastro.html'" class="botao_cadastrar_banner">Fazer Cadastro</button>
+                </div>
+            </div>
+    </section>
+    <section id="sobre_a_upi" class="sobre_a_upi">
+        <div>
+            <img src="fotos/imagem_teste_sobre.jpg" alt="Colégio Anglo">
+        </div>
+        <div class="info_sobre_a_upi">
+            <h3>Sobre a UPI</h3>
+            <h2>Excelência na formação<br>de jovens cidadãos</h2>
+            <hr>
+            <p>A Unidade de Preparação Militar de Itajubá (UPI) é uma instituição comprometida com a formação integral de seus alunos, promovendo valores como disciplina, respeito, responsabilidade e cidadania. Por meio de uma proposta educacional diferenciada, a UPI busca desenvolver não apenas o conhecimento acadêmico, mas também habilidades essenciais para a vida em sociedade.
+            <br>
+            </p>
+            <button class="botao_saibamais_sobre">Saiba mais</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_info">
+            <div class="footer_contato">
+                <h2 class="footer_topico">Contato</h2>
+                <div class="footer_contato_item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>R. Dr. Xavier Lisboa, 348</p>
+                </div>
+                <div class="footer_contato_item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>upiitajuba@gmail.com</p>
+                </div>
+                <div class="footer_contato_item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>+55 (35) 98857-9612</p>
+                </div>
+                <div class="footer_contato_item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+55 (35) 98857-9612</p>
+                </div>
+            </div>
+            <div class="footer_links">
+                <h2 class="footer_topico">Links</h2>
+                <a href="index.html">Início</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="projetos.html">Projetos</a>   
+                <a href="contato.html">Contato</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+            <div class="footer_redessociais">
+                <h2 class="footer_topico">Redes Sociais</h2>
+                <div class="footer_redesocial_item">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/upi01oficial/" target="_blank">upi01oficial</a>
+                </div>
+                <div class="footer_redesocial_item">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/escolamilitaritajuba?locale=pt_BR" target="_blank">escolamilitaritajuba</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="footer_direitos">&copy; 2026 UPI - Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
