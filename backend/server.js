@@ -21,6 +21,7 @@ db.connect((erro) => {
         return;
     }
     console.log("Conectado com sucesso");
+
     const criarTabelaSQL = `
     CREATE TABLE IF NOT EXISTS alunos(
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -33,10 +34,48 @@ db.connect((erro) => {
     `;
     db.query(criarTabelaSQL, (erroTabela) => {
         if (erroTabela) {
-            console.log("Erro de verificação ou criação da tabela", erroTabela);
+            console.log("Erro de verificação ou criação da tabela alunos", erroTabela);
         } else {
-            console.log("Tabela pronta para uso");
+            console.log("Tabela alunos pronta para uso");
         }
+    });
+
+    const criarTabelaAdminSQL = `
+    CREATE TABLE IF NOT EXISTS administradores(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100),
+    senha VARCHAR(30)
+    );
+    `;
+    db.query(criarTabelaAdminSQL, (erroTabela) => {
+        if (erroTabela) {
+            console.log("Erro de verificação ou criação da tabela administradores", erroTabela);
+            return;
+        }
+        console.log("Tabela administradores pronta para uso");
+
+        const verificaAdminsSQL = "SELECT COUNT(*) AS total FROM administradores";
+        db.query(verificaAdminsSQL, (erro, resultado) => {
+            if (erro) {
+                console.log("Erro ao verificar administradores", erro);
+                return;
+            }
+            if (resultado[0].total === 0) {
+                const inserirAdminsSQL = `
+                INSERT INTO administradores (email, senha) VALUES
+                ('Caio@gmail', 'Dinossauro123'),
+                ('Felipe@gmail', 'Gato123'),
+                ('Kauã@gmail', 'Cachorro123')
+                `;
+                db.query(inserirAdminsSQL, (erro) => {
+                    if (erro) {
+                        console.log("Erro ao inserir administradores", erro);
+                    } else {
+                        console.log("Administradores inseridos com sucesso");
+                    }
+                });
+            }
+        });
     });
 });
 
