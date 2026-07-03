@@ -1162,3 +1162,135 @@ font-size: 22px;
     padding: 15px;
     background-color: rgba(15, 71, 0, 0.901);
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/* PAINEL ADMIN */
+
+#conteudo{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 5%;
+}
+
+.admin_topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(24, 110, 1);
+}
+
+.admin_topo h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgb(23, 40, 11);
+}
+
+.admin_topo p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(90, 90, 90);
+    margin-top: 5px;
+}
+
+.botao_sair{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao_sair:hover{
+    background-color: rgb(24, 110, 1);
+    transform: translateY(-2px);
+}
+
+.grid_cadastros{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.cardCadastro{
+    border-radius: 15px;
+    padding: 22px;
+    background: linear-gradient(160deg, rgba(15, 71, 0, 0.95), rgba(23, 40, 11, 0.95));
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
+}
+
+.cardCadastro:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.cardCadastro h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.cardCadastro p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cardCadastro p:last-of-type{
+    margin-bottom: 16px;
+}
+
+.cardCadastro button{
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin-right: 8px;
+    margin-top: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cardCadastro button:first-of-type{
+    background-color: #8bc34a;
+    color: rgb(23, 40, 11);
+}
+
+.cardCadastro button:first-of-type:hover{
+    background-color: #a4d86a;
+    transform: translateY(-2px);
+}
+
+.cardCadastro button:last-of-type{
+    background-color: #c62828;
+    color: white;
+}
+
+.cardCadastro button:last-of-type:hover{
+    background-color: #e53935;
+    transform: translateY(-2px);
+}
+
+.cardCadastro hr{
+    display: none;
+}
