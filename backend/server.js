@@ -135,6 +135,7 @@ let bloqueado = false;
 
 app.post("/admin", (req, res) => {
     const { email, senha } = req.body;
+    console.log("Recebido:", email, senha);
 
     if (bloqueado === true) {
         return res.status(403).json({
